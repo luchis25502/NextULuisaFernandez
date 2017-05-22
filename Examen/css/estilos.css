@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family:  "Dancing Script";
+  src: url('Dancing Script.ttf');
+}
+
+#contenido{
+  align-items: center;
+  width: 900px;
+}
+
+header{
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(left, #5b7989 , #5b7989);
+	background: -o-linear-gradient(right, #5b7989 , #5b7989);
+	background: -moz-linear-gradient(right, #5b7989 , #5b7989);
+	background: linear-gradient(to right, #5b7989 , #5b7989);
+	border-radius: 10px;
+}
+
+header h1{
+  text-align: left;
+	color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+#menu-principal a{
+  text-decoration: none;
+  text-align:right;
+}
+
+div [class*="imagen"]{
+  min-height: 200px;
+  flex: 2 3 50%;
+}
+
+.imagencentral
+{
+  align-items: center;
+  background-color: #91C9E8;
+  width: 100%;
+  order: 1;
+
+}
+.imagenizq
+{
+background-color: #d5c75f;
+border: 1px;
+order: 2;
+}
+.imagender
+{
+background-color: #d5c75f;
+order: 3;
+}
+
+.contenido{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imagenizq .imagender{
+  box-shadow: #82c3a6 ;
+  border: 2px;
+}
+
+.imagenizq{
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+transition: transform 1s;
+}
+
+.imagenizq:hover{
+-webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+ transform: rotate(10deg);
+}
+
+
+.imagender{
+  -webkit-transition: -webkit-translate 1s;
+  -moz-transition: -moz-translate 1s;
+  transform: translate 1s;
+}
+
+.imagender:hover{
+-webkit-transform: translate(5px, -20px);
+ -moz-transform: translate(5px, -20px);
+ transform: translate(5px, -20px);
+}
+
+footer{
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(left, #C6d5c5 , #C6d5c5);
+	background: -o-linear-gradient(right, #C6d5c5 , #C6d5c5);
+	background: -moz-linear-gradient(right, #C6d5c5 , #C6d5c5);
+	background: linear-gradient(to right, #C6d5c5 , #C6d5c5);
+	border-radius: 10px;
+}
+
+.contenedor {
+	margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+div[class^='cj']{
+  border: 4px solid black;
+  display: inline-block;
+  height: 420px;
+  width: 400px;
+  text-align: justify;
+  padding: 10px;
+}
+
+/*
+.cj1 .cj2 .cj3 .cj4 {
+  text-align: justify;
+	width: 25%;
+}*/
+
+@media all and (max-width: 900px) {
+	.cj1 {
+		width: 100%;
+		order: 1;
+	}
+
+	.cj2 {
+		width: 100%;
+		order: 2;
+	}
+	.cj3 {
+		width: 100%;
+		order: 3;
+	}
+  .cj4 {
+		width: 100%;
+		order: 4;
+	}
+}
+
+@media all and (min-width: 900px) {
+	.cj1 .cj2 .cj3 .cj4 {
+		width: 100%;
+	}
+}
+
+.copyright{
+  width: 20px;
+}
