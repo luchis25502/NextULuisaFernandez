@@ -2,87 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hoja de Vida LFE</title>
+    <title>Paisajes</title>
+    <link rel="stylesheet" href="css/paisajes.css">
   </head>
   <body>
-    <h1>Hoja de Vida</h1>
-    <svg width="200px" height="200px" viewBox="0 0 200 400">
-      <image width="400px" heigth="400px" xlink:href="img/logo.svg"></image>
-    </svg>
-    <p><h2><strong>Datos Personales</strong></h2></p>
-    <p><h3><strong>Nombres:</strong></h3> </p>
-    <p style="text-indent: 7em">Luisa Marilyn</p>
-    <p><h3><strong>Apellidos:</strong></h3> </p>
-    <p style="text-indent: 7em">Fernández Sornoza</p>
-    <p><h3><strong>Fecha de Nacimiento:</strong></h3> </p>
-    <p style="text-indent: 7em">Noviembre 14 de 1981</p>
-    <p><h3><strong>Lugar de Nacimiento:</strong></h3> </p>
-    <p style="text-indent: 7em">Guayaquil - Ecuador</p>
-
-    <p><h2><strong>Enlaces de Menú</strong></h2></p>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="educacion.html">Educación</a></li>
-      <li><a href="experiencia.html">Experiencia</a></li>
-    </ul>
-
-    <p><h2><strong>Educación</strong></h2></p>
-    <table border="1" cellpadding="0" cellspacing="0">
-      <tr>
-        <td><strong>Año</strong></td>
-        <td><strong>Institución</strong></td>
-        <td><strong>Lugar</strong></td>
-        <td><strong>Culminó</strong></td>
-      </tr>
-      <tr>
-        <td>2008</td>
-        <td>Universidad de Guayaquil</td>
-        <td>Guayaquil - Ecuador</td>
-        <td>SI</td>
-      </tr>
-      <tr>
-        <td>2013</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-      </tr>
-    </table>
-    <p><h2><strong>Agregar Estudios</strong></h2></p>
-    <p><strong>Año:</strong>
-      <select name="anio">
-        <option value="1">2005</option><br/>
-        <option value="2">2006</option><br/>
-        <option value="3">2007</option><br/>
-        <option value="4">2008</option><br/>
-        <option value="5">2009</option><br/>
-        <option value="6">2010</option><br/>
-        <option value="7">2011</option><br/>
-        <option value="8">2012</option><br/>
-        <option value="9">2013</option><br/>
-        <option value="10">2014</option><br/>
-        <option value="11">2015</option><br/>
-        <option value="12">2016</option><br/>
-        <option value="13">2017</option><br/>
-        </select><br/>
-    </p>
-    <p>
-      <label for="institucion"><strong>Institución:</strong></label>
-      <input id="institucion" type="name" placeholder="Ej. Univeridad de Guayaquil" size="35px" required>
-    </p>
-    <p>
-      <label for="lugar"><strong>Lugar:</strong></label>
-      <input id="lugar" type="name"  size="39px" >
-    </p>
-    <p><strong>¿Culminó?</strong>
-      <input type="radio" name="culmino" value="1">Si
-      <input type="radio" name="culmino" value="2">No<br/>
-    </p>
-    <p>
-      <input type="submit" value="Enviar">
-    </p>
+    <div class="contenedor" role="main">
+      <header id="cabecera">
+        <h1>Paisajes <br />
+        <navbar>
+          <a href="index.html">Inicio</a>
+          <a href="paisajes.html">Paisajes</a>
+          <a href="retratos.html">Retratos</a>
+        </navbar>
+        </h1>
+      </header>
+      <div id="cuerpo">
+        <div class="paisaje1">
+      		<img src="imagenes/paisaje1.jpg" >
+      	</div>
+      	<div class="paisaje2">
+      		<img src="imagenes/paisaje2.jpg" >
+      	</div>
+      	<div class="paisaje3">
+      		<img src="imagenes/paisaje3.jpg" >
+      	</div>
+      </div>
+      <div id="cuerpo2">
+        <div class="paisaje4">
+      		<img src="imagenes/paisaje4.jpg" >
+      	</div>
+      	<div class="paisaje5">
+      		<img src="imagenes/paisaje5.jpg" >
+      	</div>
+      	<div class="paisaje6">
+      		<img src="imagenes/paisaje6.jpg" >
+      	</div>
+      </div>
+      <footer id="pie-pagina">
+        <div class="cj1">
+          <h3>Contacto</h3>
+          <p>Correo: luchis25502@hotmail.com <br>
+             Direccion: Urb. La Perla <br>
+             Teléfono: 593-984939811</p>
+        </div>
+        <div class="cj2">
+          <h3>Término</h3>
+          <p>Toda la información será verificada por los editores del sitio para garantizar su veracidad, oportunidad y exactitud antes y durante su publicación.
+          </p>
+        </div>
+        <div class="cj3">
+          <h3>Redes Sociales</h3>
+          <a href="http://facebook.com"><img src="./Iconos/facebook.svg" alt="Facebook" />   </a>
+          <a href="http://twitter.com"><img src="./Iconos/twitter.svg" alt="Twitter" />   </a>
+          <a href="http://youtube.com"><img src="./Iconos/youtube.svg" alt="Youtube" />   </a>
+        </div>
+        <div class="cj4">
+          <h3>Derechos Reservados</h3>
+          <img src="imagenes/Copyright.png" alt="" class="copyright" >
+             Luisa Fernandez 2017
+        </div>
+      </footer>
+    </div>
   </body>
-  <footer>
-    <p><h3><strong>Contacto</strong></h3></p>
-    <p><strong>Correo:</strong> luchis25502@hotmail.com | <strong>Teléfono:</strong> 593-984939811</p>
-  </footer>
 </html>
