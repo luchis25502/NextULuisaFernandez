@@ -26,6 +26,7 @@ body{
 	margin-bottom: 5px;
   border-radius: 10px;
   background-color:#5b7989;
+  width: 100%;
 }
 #cabecera h1{
   background-color:#5b7989;
@@ -40,12 +41,14 @@ body{
   background-color:#5b7989;
   text-decoration: underline;
 }
+
 #cabecera h1 navbar a:hover{
   background-color:#5b7989;
   text-decoration: none;
 }
 #cuerpo,#cuerpo2{
   background-color:#d5c75f ;
+  width: 100%;
 }
 #cuerpo div{
   box-sizing: border-box;
@@ -109,6 +112,9 @@ body{
 	filter:grayscale(100%);
 }
 @media all and (max-width: 900px) {
+  .contenedor{
+    width: 100%;
+  }
 	.paisaje1 {
     width: 100%;
 		order: 1;
@@ -135,6 +141,9 @@ body{
 	}
 }
 @media all and (min-width: 900px) {
+  .contenedor{
+    width: 100%;
+  }
 	.paisaje1 {
 		width: 30%;
 	}

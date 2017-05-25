@@ -46,6 +46,7 @@ body{
 }
 #cuerpo,#cuerpo2{
   background-color:#d5c75f ;
+  width: 100%;
 }
 #cuerpo div{
   box-sizing: border-box;
@@ -66,13 +67,11 @@ body{
   animation-duration: 1s ;
   animation-name: slidein;
 }
-
 @keyframes slidein {
   from {
     margin-top: 150%;
     width: 0%
   }
-
   to {
     margin-top: -5%;
     width: 60%;
@@ -110,6 +109,9 @@ body{
 	filter:grayscale(100%);
 }
 @media all and (max-width: 900px) {
+  .contenedor{
+    width: 100%;
+  }
 	.retrato1 {
     width: 100%;
 		order: 1;
@@ -136,6 +138,9 @@ body{
 	}
 }
 @media all and (min-width: 900px) {
+  .contenedor{
+    width: 100%;
+  }
 	.retrato1 {
 		width: 30%;
 	}
