@@ -1,11 +1,11 @@
 @font-face {
   font-family:  'Dancing Script';
-  src: url('Dancing Script.ttf');
+  src: url('../fonts/Dancing Script.ttf');
 }
 *{
-  color: white;
   background-color: black;
   font-family: 'Dancing Script';
+  box-sizing: border-box;
 }
 body{
   width:100%;
@@ -13,29 +13,47 @@ body{
   margin:0;
   padding:0;
 }
-.contenedor{
-  width:900px;
+.contenido{
+	width:900px;
+	background-color: #02010a;
+	margin: auto;
 }
-#cuerpo div{
-  background-color:#82c3a6;
+.header{
+	padding: 1px 5px;
+	/*margin-bottom: 5px;*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color:#5b7989;
+	width: 100%;
 }
-#cuerpo2 div{
-  background-color:#d5c75f;
+.header h1{
+	color: white;
+	background-color:#5b7989;
+	text-shadow: 2px 2px 2px #02010a;
 }
-#cuerpo img{
-	width: 80%;
-  background-color:#82c3a6;
+.header h1 navbar {
+	float:right;
+	padding-top:12px;
+	font-size: 16px;
+	background-color:#5b7989;
 }
-#cuerpo2 img,#cuerpo2 a{
-	border: 1px solid #d5c75f ;
-	width: 80%;
-  background-color:#d5c75f ;
+.header h1 navbar a{
+  color:white;
+	background-color:#5b7989;
+	text-decoration: underline;
 }
-
-#cabecera:hover {
+.header h1 navbar a:link{
+	background-color:#5b7989;
+	text-decoration: underline;
+}
+.header h1 navbar a:hover{
+	background-color:#5b7989;
+	text-decoration: none;
+}
+.header:hover {
   animation: 1s bote 2;
 }
-#cabecera {
+.header {
   animation-duration: 1s;
   animation-name: slidein;
 }
@@ -55,178 +73,98 @@ body{
     width: 100%;
   }
 }
-
-#cabecera{
-  padding: 1px 5px;
-	margin-bottom: 5px;
-  border-radius: 10px;
-  background-color:#5b7989;
+.body{
+	width: 100%;
 }
-#cabecera h1{
-  background-color:#5b7989;
-  text-shadow: 2px 2px 2px #02010a;
+.img-principal {
+	background-color:#82c3a6;
+	text-align:center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
-#cabecera h1 navbar{
-  float:right;
-  font-size: 16px;
-  background-color:#5b7989;
+.img-principal img{
+	width: 80%;
+	box-shadow: 2px 2px 2px #02010a;
 }
-#cabecera h1 navbar a{
-  background-color:#5b7989;
-  text-decoration: underline;
+.img-post, .img-post1, .img-post2{
+	background-color:#d5c75f;
 }
-#cabecera h1 navbar a:hover{
-  background-color:#5b7989;
-  text-decoration: none;
+.img-post1 a, .img-post2 a{
+    background-color:#d5c75f;
+    color:black;
+ }
+.img-post {
+	display: -webkit-flex; /* Safari */
+    display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align:center;
 }
-#cuerpo div{
-  text-align:center;
-  box-sizing: border-box;
-  min-width: 50px;
-  padding: 20px;
+.img-post1, .img-post2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 }
-#cuerpo2 div{
-  text-align:center;
-  box-sizing: border-box;
-  min-width:50px;
-  padding: 20px;
+.img-post1 img, .img-post2 img{
+	border: 1px solid #d5c75f;
+	box-shadow: 2px 2px 2px #02010a;
+	width: 80%;
 }
-#cuerpo, #cuerpo2, #pie-pagina {
-  display: -webkit-flex;  /*NAVEGADORES QUE TENGAN EL WEBKIT*/
-	display: flex; /*INTERNET EXPLORER VIEJO Y A VECES EDGE*/
+.img-post1 img:hover{
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+.img-post2 img:hover{
+	-webkit-transform: translate(5px, -20px);
+	-moz-transform: translate(5px, -20px);
+	transform: translate(5px, -20px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-13 {width: 25%;}
+footer{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: -webkit-flex; /* Safari */
+    display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
-
-.retrato2{
-  text-shadow: 2px 2px 2px #82c3a6 ;
-  -webkit-transition: -webkit-transform 1s;
-  -moz-transition: -moz-transform 1s;
-  transition: transform 1s;
+.pie-pagina{
+	padding: 5px;
 }
-
-.retrato2:hover{
-  text-shadow: 2px 2px 2px #82c3a6;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  transform: rotate(10deg);
+.pie-pagina, .pie-pagina h3, .pie-pagina p, .pie-pagina p strong, .pie-pagina a{
+	background-color: #c6d5c5;
 }
-
-.retrato3{
-  -webkit-transition: -webkit-translate 1s;
-  -moz-transition: -moz-translate 1s;
-  transform: translate 1s;
-}
-
-.retrato3:hover{
--webkit-transform: translate(5px, -20px);
- -moz-transform: translate(5px, -20px);
- transform: translate(5px, -20px);
-}
-
 @media all and (max-width: 900px) {
-  .contenedor{
-    width: 100%;
-  }
-	.retrato1 {
-    width: 100%;
-		order: 1;
-	}
-	.retrato2 {
-    width: 100%;
-		order: 2;
-	}
-	.retrato3 {
-    width: 100%;
-		order: 3;
-	}
-}
-@media all and (min-width: 900px) {
-  .contenedor{
-    width: 100%;
-  }
-	.retrato1 {
+    .contenido{
 		width: 100%;
 	}
-  .retrato2{
-		width: 50%;
+	.header h1 navbar{
+		padding-top:0;
+		text-align:center;
+		width: 100%;
 	}
-  .retrato3 {
-		width: 50%;
+	[class*="col-"] {
+        width: 100%;
+    }
+	.col-3{
+		width: 80%;
 	}
+.col-13{
+  width: 20%;
 }
-#pie-pagina {
-  box-sizing: border-box;
-  min-width: 150px;
-  background-color:#C6d5c5;
-	height:250px;
-	border-bottom-right-radius: 10em;
-  border-bottom-left-radius: 10em;
-}
-div[class^='cj']{
-  padding: 5px;
-  background-color: #C6d5c5;
-}
-.copyright{
-  border:none;
-	width: 30px;
-  height: 30px;
-  padding: 0;
-  margin-right: 5px;
-  float:left;
-}
-.cj3 img{
-	border: none;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-}
-.cj3 a{
-	padding: 0;
-  margin: 0;
-}
-.cj1 h3, .cj2 h3, .cj3 h3, .cj4 h3,
-.cj1 p, .cj2 p, .cj3 p, .cj4 p{
-	background-color: #C6d5c5;
-  color:black;
-}
-.cj3 a:link{
-  outline: none;
-  text-decoration: none;
-  background-color: #C6d5c5;
-  color:black;
-}
-
-@media all and (max-width: 900px) {
-	.cj1 {
-    width: 100%;
-		order: 1;
-	}
-	.cj2 {
-    width: 100%;
-		order: 2;
-	}
-	.cj3 {
-    width: 100%;
-		order: 3;
-	}
-  .cj4 {
-    width: 100%;
-		order: 4;
-	}
-}
-@media all and (min-width: 900px) {
-	.cj1 {
-		width: 20%;
-	}
-  .cj2{
-		width: 20%;
-	}
-  .cj3 {
-		width: 20%;
-	}
-  .cj4{
-		width: 20%;
-	}
 }
