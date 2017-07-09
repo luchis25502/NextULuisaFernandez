@@ -1,0 +1,90 @@
+.blog-body {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-inverse {
+  background-color: rgba(243,226,199,1);
+  min-height: 10%;
+  border: none;
+}
+
+.fondo{
+  background: url(../img/fondo.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.fondo_botones{
+  background.color: lightgreen !important;
+}
+.logo-img {
+  width: 200px;
+}
+
+.redes-sociales {
+  margin-top: 35px;
+}
+.img-artista {
+  width: 90%;
+}
+
+.titulo-artista{
+  margin-left: 15px;
+  margin-right: 15px;
+  color: rgba(73,155,234,1);
+}
+/*navbar-inverse navbar-fixed-top  affix-top*/
+.texto-artista{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.margen{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.video{
+  width: 100%;
+}
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.container-fluid {
+  margin-top: 73px;
+}
+
+.label-class {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+@media (max-width: 770px) {
+  .logo-img {
+    width: 50%;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  .titulo-text {
+    font-size: 15px;
+  }
+
+  .container-fluid{
+    margin-top: 60px;
+  }
+
+}
