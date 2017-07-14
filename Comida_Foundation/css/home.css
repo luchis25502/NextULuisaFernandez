@@ -1,0 +1,16 @@
+.logo-img{
+  width: 30%;
+}
+body{
+  background-color: rgba(252, 250, 227, 0.5);/*rgba(252, 212, 242, 0.52);*/
+}
+
+div.secondary.callout.text-center{
+  min-height: 242px;
+}
+
+.xxx{
+  content:url("img/1.jpg");
+  position:absolute;
+}
+/*https://www.youtube.com/watch?v=pmXtNHLx9fc&t=2s+*/
