@@ -1,12 +1,10 @@
 body {
   margin: 0;
   background-size: cover;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-lonely.jpg") no-repeat center center fixed;
+  background: url("../img/wallpaper.jpg") no-repeat center center fixed;
   background-blend-mode: darken;
   transition: 3s;
-}
-.barra-superior{
-  min-height: 4rem;
+  opacity: 0.95;
 }
 div[class*="columna"]{
   min-height: 50rem;
@@ -15,22 +13,20 @@ div[class*="bloque"]{
   height: 25rem;
   overflow: scroll;
 }
-.columna-chat, .columna-news{
-  padding: 0 !important;
+.slogan{
+  color: white;
 }
-.contenedor-write-publicacion{
-  min-height: 7rem;
-}
-.contenedor-publicacion{
-  min-height: 17rem;
-}
-.brand-logo{
-  width: 70px;
+.columna-chat{
+  /*padding: 1px !important;*/
+  margin-left: 10px !important;
 }
 .logo{
   width: 70px;
   /*margin-top: 0.5rem;*/
   /*float: left;*/
+}
+.redes_sociales{
+  width: 75px !important;
 }
 .entrada-blog{
     float: left;
@@ -43,31 +39,11 @@ div[class*="bloque"]{
   background: rgba(0,0,0,0)
   transition: background-color 1s;
 }
-.boo {
-  position: relative;
-  width: 20em; min-height: 10em;
-  background: rgba(0,0,0,0)
-  transition: background-color 1s;
-}
-.contenedor-noticias{
-  margin-top: 1rem;
-  min-height: 50rem;
-  padding: 0.5rem;
-}
 .responsive-img{
   width: 100%;
 }
-.buscar-campo{
-  float: left;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  width: 70%;
-}
 .barra-superior .row{
   margin-bottom: 0;
-}
-.contenedor-botones{
-  margin-top: 1rem;
 }
 #publicacion-texto{
   border-top-left-radius: 5px;
