@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><title> Ejemplo de los eventos onMouseDown y on MouseUp</title>
+<script language=JavaScript>
+function myButton_onmouseup() {
+   document.form1.myButton.value = " el ratón no está pulsado"
+}
+
+function myButton_onmousedown() {
+   document.form1.myButton.value = " el ratón está pulsado"
+}
+</script>
+</head>
+<body>
+<br><br><br>
+<FORM NAME=form1><br>
+   <INPUT TYPE='button' NAME='myButton' VALUE=' el ratón no está pulsado' 
+   onmouseup="myButton_onmouseup()"
+   onmousedown="myButton_onmousedown()">
+</FORM>
+
+</body>
+</html>
